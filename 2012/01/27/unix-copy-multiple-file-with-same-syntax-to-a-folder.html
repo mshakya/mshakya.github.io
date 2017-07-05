@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>musings of mshakya</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>UNIX: Copy Multiple File With Same Syntax to a Folder</title>
+  <meta name="description" content="This command copies all the files that are present in the sub folders of the main folder FASTA into another folder called ONLY_FASTA. It is useful when i am ...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="mshakya.github.io/">
+  <link rel="canonical" href="mshakya.github.io/2012/01/27/unix-copy-multiple-file-with-same-syntax-to-a-folder.html">
   <link rel="alternate" type="application/rss+xml" title="musings of mshakya" href="mshakya.github.io/feed.xml" />
 </head>
 
@@ -55,31 +54,24 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">UNIX: Copy Multiple File With Same Syntax to a Folder</h1>
+    <p class="post-meta">Jan 27, 2012</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jan 27, 2012</span>
+  <article class="post-content">
+    <p>This command copies all the files that are present in the sub folders of the main folder FASTA into another folder called ONLY_FASTA. It is useful when i am trying to collect all fasta file into a folder based on their name.</p>
 
-        <h2>
-          <a class="post-link" href="/2012/01/27/unix-copy-multiple-file-with-same-syntax-to-a-folder.html">UNIX: Copy Multiple File With Same Syntax to a Folder</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 15, 2011</span>
+<p><code>
+$ find FASTA/ -name “*_M.fasta” -exec cp “{}” FASTA/ONLY_FASTA/ \;
+</code></p>
 
-        <h2>
-          <a class="post-link" href="/2011/11/15/demultiplexing.html">Demultiplexing</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>NOTE: this post was imported from my previous blog (microbeatic.wordpress.com)</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
+  </article>
 
 </div>
 
