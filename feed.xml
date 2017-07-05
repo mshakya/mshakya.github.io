@@ -6,8 +6,8 @@
 </description>
     <link>mshakya.github.io/</link>
     <atom:link href="mshakya.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Jun 2017 22:50:37 -0600</pubDate>
-    <lastBuildDate>Tue, 27 Jun 2017 22:50:37 -0600</lastBuildDate>
+    <pubDate>Tue, 04 Jul 2017 23:23:46 -0600</pubDate>
+    <lastBuildDate>Tue, 04 Jul 2017 23:23:46 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -46,6 +46,57 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Demultiplexing</title>
+        <description>&lt;h2 id=&quot;demultiplexing-sff-files-based-on-barcode&quot;&gt;Demultiplexing Sff Files Based on Barcode&lt;/h2&gt;
+
+&lt;p&gt;To submit the 16S data to a data repository, most of them prefer that the submitter demultiplex the dataset to one sff file/ sample. There are number of ways to do it, but common requirement for all the method is sfffile. Its a toolkit that comes with 454 software. Here is what its info says: “&lt;/p&gt;
+
+&lt;p&gt;The sfffile program constructs a single SFF file containing the reads from a list of SFF files and/or 454 runs. The reads written to the new SFF file can be filtered using inclusion and exclusion lists of accessions. “&lt;/p&gt;
+
+&lt;p&gt;So, basically, with this command we can deconstruct and reconstruct the sff file as per our need.&lt;/p&gt;
+
+&lt;p&gt;Here, I will describe how i deconstructed a single sff file to multiple sff file based on their barcode or MID. First, I made a list of the barcodes corresponding the samples that i want to extract. Then, formatted that file exactly like MIDConfig.parse file. Here is what that file looks like:&lt;/p&gt;
+
+&lt;p&gt;```
+GSMIDs { mid = “MID1″, “ACGAGTGCGT”, 2; mid = “MID2″, “ACGCTCGACA”, 2;&lt;/p&gt;
+
+&lt;p&gt;}
+```
+mid is a handle that is used by sff to look for information. “MID1″ is the name of your sample, followed by the barcode, and the number at the end represents the number of mismatches to allow during demultiplexing. Here “GSMIDs” can be replaced with whatever text you prefer, but the same exact text needs to be specified when you run sfffile..&lt;/p&gt;
+
+&lt;p&gt;So, we have all the files that we need (sff file, barcode information, and 454 toolkits installed)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+sfffile -s GSMID -mcf your_barcode_file.txt -nmft your_sff_file.sff -s : splits reads by your barcode into separate files -mcf mid configuration files -nmft stops from a manifest being written in the sff file.
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;As a result of this, your sff file will be deconstructed to several sff files based on the barcode information that you included in the file. The name of the output file will be:
+&lt;code&gt;
+454Reads.name_of_your_sample.sff
+&lt;/code&gt;
+Now, we need to generate MD5 checksum for all the files that we generated. A MD5 checksum or hash sum generated is used to detect errors introduced through storage or transfer. SRA uses the file name and md5 checksum to track and link files to their proper Runs. A tutorial on this can also be found in the SRA website here.&lt;/p&gt;
+
+&lt;p&gt;Since, there will be 20-30 sff files, its tedious to go through each of the file to generate the MD5, here is a simple and easy way to do it. Before executing this make sure you are in the same directory where all your demultiplexed sff file is.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+you@yourserver/dir_with_sff_file&amp;gt;md5sum 454Reads.*.*&amp;gt;&amp;gt; md5.txt
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;It will append all the MD5 checksum of sff files present in the directory to md4.txt.&lt;/p&gt;
+
+&lt;p&gt;Please note that this was done in a linux based machine with 454 tools installed.&lt;/p&gt;
+
+&lt;p&gt;NOTE: this post was imported from my previos blog (microbeatic.wordpress.com)&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Nov 2011 20:14:23 -0700</pubDate>
+        <link>mshakya.github.io/2011/11/15/demultiplexing.html</link>
+        <guid isPermaLink="true">mshakya.github.io/2011/11/15/demultiplexing.html</guid>
+        
         
       </item>
     

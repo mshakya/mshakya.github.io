@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>musings of mshakya</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>Demultiplexing</title>
+  <meta name="description" content="Demultiplexing Sff Files Based on Barcode">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="mshakya.github.io/">
+  <link rel="canonical" href="mshakya.github.io/2011/11/15/demultiplexing.html">
   <link rel="alternate" type="application/rss+xml" title="musings of mshakya" href="mshakya.github.io/feed.xml" />
 </head>
 
@@ -55,39 +54,57 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="post">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title">Demultiplexing</h1>
+    <p class="post-meta">Nov 15, 2011</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Jun 27, 2017</span>
+  <article class="post-content">
+    <h2 id="demultiplexing-sff-files-based-on-barcode">Demultiplexing Sff Files Based on Barcode</h2>
 
-        <h2>
-          <a class="post-link" href="/2017/06/27/welcome-aboard.html">Welcome Aboard</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Jun 27, 2017</span>
+<p>To submit the 16S data to a data repository, most of them prefer that the submitter demultiplex the dataset to one sff file/ sample. There are number of ways to do it, but common requirement for all the method is sfffile. Its a toolkit that comes with 454 software. Here is what its info says: “</p>
 
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/06/27/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 15, 2011</span>
+<p>The sfffile program constructs a single SFF file containing the reads from a list of SFF files and/or 454 runs. The reads written to the new SFF file can be filtered using inclusion and exclusion lists of accessions. “</p>
 
-        <h2>
-          <a class="post-link" href="/2011/11/15/demultiplexing.html">Demultiplexing</a>
-        </h2>
-      </li>
-    
-  </ul>
+<p>So, basically, with this command we can deconstruct and reconstruct the sff file as per our need.</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>Here, I will describe how i deconstructed a single sff file to multiple sff file based on their barcode or MID. First, I made a list of the barcodes corresponding the samples that i want to extract. Then, formatted that file exactly like MIDConfig.parse file. Here is what that file looks like:</p>
+
+<p>```
+GSMIDs { mid = “MID1″, “ACGAGTGCGT”, 2; mid = “MID2″, “ACGCTCGACA”, 2;</p>
+
+<p>}
+```
+mid is a handle that is used by sff to look for information. “MID1″ is the name of your sample, followed by the barcode, and the number at the end represents the number of mismatches to allow during demultiplexing. Here “GSMIDs” can be replaced with whatever text you prefer, but the same exact text needs to be specified when you run sfffile..</p>
+
+<p>So, we have all the files that we need (sff file, barcode information, and 454 toolkits installed)</p>
+
+<p><code>
+sfffile -s GSMID -mcf your_barcode_file.txt -nmft your_sff_file.sff -s : splits reads by your barcode into separate files -mcf mid configuration files -nmft stops from a manifest being written in the sff file.
+</code></p>
+
+<p>As a result of this, your sff file will be deconstructed to several sff files based on the barcode information that you included in the file. The name of the output file will be:
+<code>
+454Reads.name_of_your_sample.sff
+</code>
+Now, we need to generate MD5 checksum for all the files that we generated. A MD5 checksum or hash sum generated is used to detect errors introduced through storage or transfer. SRA uses the file name and md5 checksum to track and link files to their proper Runs. A tutorial on this can also be found in the SRA website here.</p>
+
+<p>Since, there will be 20-30 sff files, its tedious to go through each of the file to generate the MD5, here is a simple and easy way to do it. Before executing this make sure you are in the same directory where all your demultiplexed sff file is.</p>
+
+<p><code>
+you@yourserver/dir_with_sff_file&gt;md5sum 454Reads.*.*&gt;&gt; md5.txt
+</code></p>
+
+<p>It will append all the MD5 checksum of sff files present in the directory to md4.txt.</p>
+
+<p>Please note that this was done in a linux based machine with 454 tools installed.</p>
+
+<p>NOTE: this post was imported from my previos blog (microbeatic.wordpress.com)</p>
+
+
+  </article>
 
 </div>
 
