@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Column conservation scores</title>
+  <meta name="description" content="What i am looking for is infact not conservation score, its an exactly the way profiles are scored or the way PSSMs are score. I am much more interested in h...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="mshakya.github.io/2014/04/23/column-conservation-scores.html">
+  <link rel="alternate" type="application/rss+xml" title="migun shakya" href="mshakya.github.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">migun shakya</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Column conservation scores</h1>
+    <p class="post-meta">Apr 23, 2014</p>
+  </header>
+
+  <article class="post-content">
+    <p>What i am looking for is infact not conservation score, its an exactly the way profiles are scored or the way PSSMs are score. I am much more interested in how each amino acid are scored in a column of the alignment, and not in the score that represents the whole column. My kind of score should put heavy emphasis on the amino acid that are highly conserved and low emphasis on the columns that are equally present, but not highly conserved.</p>
+
+<p>I have come across many conservation scores that score the column conservation of an alignment. There are many different types of it. Here i describe them sequentially based on either original papers or the reviews. I also try to be explicit in describing only scores that measures the column conservation and not the score of the whole sequence. A publication by William S.J Valdar sounds the most suited one in terms of describing the categorizing the scores. It is important for me to find out how not the whole column or sequence is scored, but instead whats the score of each amino acid based on its presence, absence, and frequency, for i will be using this information to then compare it to the corresponding multiple sequence alignment and then inferring how different similar or they are. Here he categorizes the scores as:</p>
+
+<ul>
+  <li>Symbol Frequency Scores</li>
+  <li>Symbol Entropy Scores</li>
+  <li>Stereochemical Property Scores</li>
+  <li>Mutation Data Scores</li>
+  <li>Stereochemically Sensitive Entropy Scores</li>
+  <li>Weighted Scores</li>
+</ul>
+
+<h2 id="henikoff-weighing">Henikoff weighing</h2>
+<p>I have recently tried to understand this weighing system in more details as this is the one that is used in profile construction and also in PSSM construction. Although Wang et al tries to explain the method like this :</p>
+
+<h3 id="how-does-it-score-amino-acid-residues-in-an-alignment-column">How does it score amino acid residues in an alignment column?</h3>
+
+<p>In this method, first, equal share of weight is assigned to each residue. For example, if an alignment column consist of two different amino acid types, <em>M</em> and <em>K</em>, then each residue is assigned equal weight of 0.5 and 0.5, regardless of its distribution.</p>
+
+<p>Here, if a column is conserved it is inversely proportional to number of sequence.</p>
+
+<p>An example alignment:</p>
+
+<pre><code>GYVGS
+GFDGF
+GYDGF
+GYQGG
+</code></pre>
+
+<p>Here,
+	<em>G</em> in the first and fourth column is scored as <script type="math/tex">\frac{1}{1*4}</script> = 0.25
+	<em>Y</em> in the second column is scored as <script type="math/tex">\frac{1}{2*3}</script> = 0.17
+	<em>F</em> in the second column is scored as <script type="math/tex">\frac{1}{2*1}</script> = 0.5</p>
+
+<p>An example 2:</p>
+
+<p>A score for all amino acids given using Henikoff protein profile, including gap, calcualted using <em>prophecy</em> script in EMBOSS</p>
+
+<pre><code>2.00 0.00 -1.25 3.75 5.00 -3.25 2.75 1.38 -0.75 0.00 1.75 -1.50 -0.88 2.38 0.00 1.50 3.12 0.50 2.62 2.62 0.00 -0.62 -3.75 0.00 -2.88 0.00 0.05 0.05
+</code></pre>
+
+<p>based on this column of the alignment</p>
+
+<pre><code>TEQQSST--------
+</code></pre>
+
+<p>highlighting the amino acid scores in the profile represented from the amino acid</p>
+
+<pre><code>2.00 0.00 -1.25 3.75 **5.00** -3.25 2.75 1.38 -0.75 0.00 1.75 -1.50 -0.88 2.38 0.00 1.50 **3.12** 0.50 **2.62** **2.62** 0.00 -0.62 -3.75 0.00 -2.88 0.00 0.05 0.05
+</code></pre>
+
+<p>I am not clear on how the scores for other amino acid that are not in this columns are calculated. Additionally, although gap makes up more than 50% of the column, it only accounts for 0.5</p>
+
+<h3 id="what-are-some-advantages">What are some advantages?</h3>
+<p>Its very fast and simple, and already implemented in the EMBOSS <code>prophecy</code> program. It is independent of how the sequence are ordered and it uses all the information.</p>
+
+<h3 id="what-are-some-disdvantages">What are some disdvantages?</h3>
+<p>Problem with closely related sequences in the alignment. It has equal valuation for all sequences, even if its duplicate.</p>
+
+<h3 id="what-are-some-conditions-where-it-can-be-implemented">What are some conditions where it can be implemented?</h3>
+
+<p>“<em>In Henikoff weighting, for an amino acid at position <script type="math/tex">m</script> of sequence <script type="math/tex">i</script>, we first determine the subset of sequences that also have an amino acid in the same column of the multiple alignment. Each sequence in this subset may begin and end in different columns of the multiple alignment. We find the first column in which all of these sequences in the subset are represented either with an amino acid or an internal gap (i.e., excluding N- and C-terminal gaps). We call this <script type="math/tex">C_{left}</script>. Similarly, we identify the last column of this subset in which all of these sequences are represented either with an amino acid or an internal gap. We call this <script type="math/tex">C_{right}</script>. The weight of the amino acid at position <script type="math/tex">m</script> of sequence <script type="math/tex">i</script> is then [<strong>see below</strong>] where <script type="math/tex">N^j_{diff}</script> is the number of different amino acids at alignment position j but considering only those sequences in the subset, and <script type="math/tex">n_i^j</script> is the total number of the same amino acid i type as the residue of sequence i in alignment column j in the subset.</em>”</p>
+
+<script type="math/tex; mode=display">W^m_j = \frac{1}{C_{right} - C_{left} + 1} \sum_{j=C_{left} , C_{right}} \frac{1}{N_{diff}^j  n^j_i}</script>
+
+<p>Here, the authors explains how the henikoff score is calculated. There are some important point to be noted here, the position <script type="math/tex">m</script> is the position at an <em>unaligned</em> sequence and is not used anywhere in the formula, so its rather not important to understand the concept. Then, from the multiple sequence alignment, a subset of sequences are picked based on the presence of an amino acid - here, it is rather confusing on what they are trying to explain  - are the subset based on the presence of same amino acid in the column or its random selection -, the former seems to make more sense, but as you go further, the <script type="math/tex">N^j_{diff}</script> is the number of different types of amino acids in the subset, so if former were true, then it will be 1 throughout. Among the subset, the first aligned column from both ends are identified and recorded as <script type="math/tex">C_{left}</script> and <script type="math/tex">C_{right}</script>. After these naming conventions are used in the formula stated above, but its unclear to me whats its value. At first glance, i thought it was a naming convention of the column.</p>
+
+<p>The reason that the method was developed was to minimize the complexity introduced by the tree based methods.</p>
+
+<p>“<em>A simple method to represent the diversity at a position is to award each different residue an equal share of weight, and then to divide that weight equally among the sequences sharing the same residue. So, if in a position of a multiple alignment, <script type="math/tex">r</script> different residues are represented, a residue represented in only one sequence sequence contributes a score of <script type="math/tex">1/r</script> to that sequence, wheas a residue represented in <script type="math/tex">s</script> sequence contributes a score of <script type="math/tex">1/rs</script></em>.</p>
+
+<p>Position based weights are simply generalizations of correct weights from single positions to whole sequences by summation overal all positions “</p>
+
+<h2 id="psic">PSIC</h2>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">migun shakya</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>migun shakya</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/mshakya">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">mshakya</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/mshakya">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">mshakya</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Random thoughts on biology and programming.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

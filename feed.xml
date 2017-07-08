@@ -6,76 +6,714 @@
 </description>
     <link>mshakya.github.io/</link>
     <atom:link href="mshakya.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 05 Jul 2017 12:06:18 -0600</pubDate>
-    <lastBuildDate>Wed, 05 Jul 2017 12:06:18 -0600</lastBuildDate>
+    <pubDate>Sat, 08 Jul 2017 15:30:20 -0600</pubDate>
+    <lastBuildDate>Sat, 08 Jul 2017 15:30:20 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>UNIX: Copy Multiple File With Same Syntax to a Folder</title>
-        <description>&lt;p&gt;This command copies all the files that are present in the sub folders of the main folder FASTA into another folder called ONLY_FASTA. It is useful when i am trying to collect all fasta file into a folder based on their name.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;
-$ find FASTA/ -name “*_M.fasta” -exec cp “{}” FASTA/ONLY_FASTA/ \;
+        <title>Vi cheatsheet</title>
+        <description>&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;delete blank lines&lt;/em&gt;
+&lt;code&gt;
+:g/^$/d
 &lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;NOTE: this post was imported from my previous blog (microbeatic.wordpress.com)&lt;/p&gt;
-
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;delete current line&lt;/em&gt;
+&lt;code&gt;
+dd
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>Fri, 27 Jan 2012 10:34:01 -0700</pubDate>
-        <link>mshakya.github.io/2012/01/27/unix-copy-multiple-file-with-same-syntax-to-a-folder.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2012/01/27/unix-copy-multiple-file-with-same-syntax-to-a-folder.html</guid>
+        <pubDate>Tue, 22 Sep 2015 12:11:28 -0600</pubDate>
+        <link>mshakya.github.io/bioinformatics,cheatsheet/2015/09/22/vi-cheatsheet.html</link>
+        <guid isPermaLink="true">mshakya.github.io/bioinformatics,cheatsheet/2015/09/22/vi-cheatsheet.html</guid>
+        
+        
+        <category>bioinformatics,cheatsheet</category>
+        
+      </item>
+    
+      <item>
+        <title>DonateWhere</title>
+        <description>&lt;h1 id=&quot;waves-for-waterhttpwwwwavesforwaterorgprojectnepalreliefinitiative&quot;&gt;&lt;a href=&quot;http://www.wavesforwater.org/project/nepalreliefinitiative&quot;&gt;Waves for Water&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;care&quot;&gt;&lt;a href=&quot;&quot;&gt;CARE&lt;/a&gt;&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;provided ground support during the earthquake, assisting people by supplying ready to eat meals, clean drinking water and latrine construction.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;handicap-internationalhttpshandicapinternationalnationbuildercomdonatenownepalemergency&quot;&gt;&lt;a href=&quot;https://handicapinternational.nationbuilder.com/donate_now_nepal_emergency&quot;&gt;Handicap International&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;[]&lt;/h1&gt;
+</description>
+        <pubDate>Sun, 26 Apr 2015 11:14:32 -0600</pubDate>
+        <link>mshakya.github.io/2015/04/26/donatewhere.html</link>
+        <guid isPermaLink="true">mshakya.github.io/2015/04/26/donatewhere.html</guid>
         
         
       </item>
     
       <item>
-        <title>Demultiplexing</title>
-        <description>&lt;h2 id=&quot;demultiplexing-sff-files-based-on-barcode&quot;&gt;Demultiplexing Sff Files Based on Barcode&lt;/h2&gt;
+        <title>Help is on the way (How and from Where?)</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/11192731_489380064543463_453711654_n.jpg&quot; alt=&quot;WESTRONG&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;To submit the 16S data to a data repository, most of them prefer that the submitter demultiplex the dataset to one sff file/ sample. There are number of ways to do it, but common requirement for all the method is sfffile. Its a toolkit that comes with 454 software. Here is what its info says: “&lt;/p&gt;
+&lt;p&gt;I have put together a list of different types of help that are either already in Nepal or on the way. Please help me grow this list by sharing thoughts and links on comment section below.&lt;/p&gt;
 
-&lt;p&gt;The sfffile program constructs a single SFF file containing the reads from a list of SFF files and/or 454 runs. The reads written to the new SFF file can be filtered using inclusion and exclusion lists of accessions. “&lt;/p&gt;
+&lt;p&gt;Although, we cant be there to help, I hope together with our effort we can assure our families, that HELP is ON THE WAY.&lt;/p&gt;
 
-&lt;p&gt;So, basically, with this command we can deconstruct and reconstruct the sff file as per our need.&lt;/p&gt;
+&lt;p&gt;I have categorized help (whether its monetary or not) based on their source (country, agencies).&lt;/p&gt;
 
-&lt;p&gt;Here, I will describe how i deconstructed a single sff file to multiple sff file based on their barcode or MID. First, I made a list of the barcodes corresponding the samples that i want to extract. Then, formatted that file exactly like MIDConfig.parse file. Here is what that file looks like:&lt;/p&gt;
+&lt;p&gt;Click &lt;a href=&quot;#agencies&quot;&gt;here&lt;/a&gt; for list of agencies.&lt;/p&gt;
 
-&lt;p&gt;```
-GSMIDs { mid = “MID1″, “ACGAGTGCGT”, 2; mid = “MID2″, “ACGCTCGACA”, 2;&lt;/p&gt;
+&lt;h1 id=&quot;list-of-countries-that-have-stepped-up-to-help&quot;&gt;List of Countries that have stepped up to help.&lt;/h1&gt;
 
-&lt;p&gt;}
-```
-mid is a handle that is used by sff to look for information. “MID1″ is the name of your sample, followed by the barcode, and the number at the end represents the number of mismatches to allow during demultiplexing. Here “GSMIDs” can be replaced with whatever text you prefer, but the same exact text needs to be specified when you run sfffile..&lt;/p&gt;
+&lt;h2 id=&quot;australia&quot;&gt;Australia&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Australia is sending in a Crisis Response Team and two humanitarian expert.&lt;/li&gt;
+  &lt;li&gt;Australia has pledged $5 million distributed as follows:
+    &lt;ul&gt;
+      &lt;li&gt;$2.5 million to assist Australian non-government organisations;&lt;/li&gt;
+      &lt;li&gt;$2 million to support United Nations partners; and&lt;/li&gt;
+      &lt;li&gt;$0.5 million to support the Australian Red Cross.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;So, we have all the files that we need (sff file, barcode information, and 454 toolkits installed)&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;My update on the situation in Nepal: &lt;a href=&quot;http://t.co/5t7shKO6up&quot;&gt;http://t.co/5t7shKO6up&lt;/a&gt;&lt;/p&gt;&amp;mdash; Julie Bishop (@JulieBishopMP) &lt;a href=&quot;https://twitter.com/JulieBishopMP/status/592181632053870593&quot;&gt;April 26, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 
-&lt;p&gt;&lt;code&gt;
-sfffile -s GSMID -mcf your_barcode_file.txt -nmft your_sff_file.sff -s : splits reads by your barcode into separate files -mcf mid configuration files -nmft stops from a manifest being written in the sff file.
-&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;canada&quot;&gt;Canada&lt;/h2&gt;
 
-&lt;p&gt;As a result of this, your sff file will be deconstructed to several sff files based on the barcode information that you included in the file. The name of the output file will be:
-&lt;code&gt;
-454Reads.name_of_your_sample.sff
-&lt;/code&gt;
-Now, we need to generate MD5 checksum for all the files that we generated. A MD5 checksum or hash sum generated is used to detect errors introduced through storage or transfer. SRA uses the file name and md5 checksum to track and link files to their proper Runs. A tutorial on this can also be found in the SRA website here.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Canada is contributing 5,000,000$  and also sending personnel help. &lt;a href=&quot;http://www.theglobeandmail.com/news/national/at-least-388-canadians-registered-in-nepal-officials/article24126301/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Since, there will be 20-30 sff files, its tedious to go through each of the file to generate the MD5, here is a simple and easy way to do it. Before executing this make sure you are in the same directory where all your demultiplexed sff file is.&lt;/p&gt;
+&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.3&quot;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+&lt;div class=&quot;fb-post&quot; data-href=&quot;https://www.facebook.com/JasonKenneymp/posts/10153258358497641&quot; data-width=&quot;500&quot;&gt;&lt;div class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;blockquote cite=&quot;https://www.facebook.com/JasonKenneymp/posts/10153258358497641&quot;&gt;&lt;p&gt;We are deploying a Canadian Armed Forces Disaster Assistance Response (DART) assessment team to Nepal immediately, in response to the earthquake.&lt;/p&gt;Posted by &lt;a href=&quot;https://www.facebook.com/JasonKenneymp&quot;&gt;Jason Kenney&lt;/a&gt; on &lt;a href=&quot;https://www.facebook.com/JasonKenneymp/posts/10153258358497641&quot;&gt;Saturday, April 25, 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;
-you@yourserver/dir_with_sff_file&amp;gt;md5sum 454Reads.*.*&amp;gt;&amp;gt; md5.txt
-&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&quot;china&quot;&gt;China&lt;/h2&gt;
 
-&lt;p&gt;It will append all the MD5 checksum of sff files present in the directory to md4.txt.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;China has sent 68-strong China International Search and Rescue Team (CISAR). The team will arrive in Kathmandu midday Sunday (April 26, 2015). See the press release &lt;a href=&quot;http://www.cctv-america.com/2015/04/25/chinese-rescue-team-to-depart-for-shaken-devastated-nepal&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Please note that this was done in a linux based machine with 454 tools installed.&lt;/p&gt;
+&lt;h2 id=&quot;france&quot;&gt;France&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;France is sending 11 rescuers and emergency equipment to Kathmandu on Sunday (April 26, 2015). &lt;a href=&quot;http://www.680news.com/2015/04/26/germany-france-sending-rescue-teams-emergency-relief-to-quake-hit-nepal/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;NOTE: this post was imported from my previos blog (microbeatic.wordpress.com)&lt;/p&gt;
+&lt;h2 id=&quot;germany&quot;&gt;Germany&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Germany has sent a team of 52 relief workers that include doctors, search experts, rescue dogs. &lt;a href=&quot;http://www.680news.com/2015/04/26/germany-france-sending-rescue-teams-emergency-relief-to-quake-hit-nepal/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
+&lt;h2 id=&quot;india&quot;&gt;India&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A tweet from Narendra Modi about donation of Rs. 51 lakh by &lt;a href=&quot;http://en.wikipedia.org/wiki/Morari_Bapu&quot;&gt;Pujya Morari Bapu&lt;/a&gt;. Many thanks to him. As of yet I have not found details on how this money will be used in Nepal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Received a call from Pujya Morari Bapu. He has donated Rs. 51 lakh for relief work in Nepal. My deepest gratitude to him.&lt;/p&gt;&amp;mdash; Narendra Modi (@narendramodi) &lt;a href=&quot;https://twitter.com/narendramodi/status/592001004469522432&quot;&gt;April 25, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Series of tweets from Vikas Swarup of Ministry of External Affairs, India regarding help being deployed to Nepal. A total of 285 NDRF team members have been sent to help with rescue along with 43 tons of relief material, including tents and food &lt;a href=&quot;http://www.nytimes.com/aponline/2015/04/25/world/asia/ap-as-nepal-earthquake.html?_r=0&quot;&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;285 NDRF team members have been flown in from India in 3 IAF aircrafrts to assist Nepal Army in rescue operations &lt;a href=&quot;https://twitter.com/MEAIndia&quot;&gt;@MEAIndia&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/NepalEarthquake?src=hash&quot;&gt;#NepalEarthquake&lt;/a&gt;&lt;/p&gt;&amp;mdash; Embassy of India KTM (@eoiktmnp) &lt;a href=&quot;https://twitter.com/eoiktmnp/status/592029358845468673&quot;&gt;April 25, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Earlier today: relief materials and equipment for earthquake assistance being loaded on aircraft bound for Kathmandu &lt;a href=&quot;http://t.co/6hMyOkMrT6&quot;&gt;pic.twitter.com/6hMyOkMrT6&lt;/a&gt;&lt;/p&gt;&amp;mdash; Vikas Swarup (@MEAIndia) &lt;a href=&quot;https://twitter.com/MEAIndia/status/592027809846951937&quot;&gt;April 25, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;israel&quot;&gt;Israel&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Israel also plans to dispatch search and rescue teams and humanitarian aid to Nepal as per &lt;a href=&quot;http://www.timesofisrael.com/israel-prepares-to-send-emergency-aid-to-nepal-after-massive-quake/&quot;&gt;Times of Israel&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.israaid.co.il/&quot;&gt;IsraAID&lt;/a&gt; also has setup a fund raising page to collect funds. Here is the &lt;a href=&quot;http://www.globalgiving.org/projects/emergency-relief-for-earthquake-struck-nepal/?utm_content=Your%20project%20has%20been%20approved!&amp;amp;utm_campaign=project-approved&amp;amp;utm_source=email2.globalgiving.org&amp;amp;utm_medium=email&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;italy&quot;&gt;Italy&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Italy has made $316,000 available through International Red Cross. See press release &lt;a href=&quot;http://www.usnews.com/news/world/articles/2015/04/25/leaders-charities-offer-condolences-help-after-nepal-quake&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;japan&quot;&gt;Japan&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Japan is sending around 70 members (on Sunday April 26, 2015) from the National Police Agency, the Fire and Disaster Management Agency and the Japan Coast Guard who will coordinate relief efforts with the Nepalese government.&lt;a href=&quot;http://www.japantimes.co.jp/news/2015/04/26/national/abe-offers-aid-to-nepal-after-earthquake/#.VTzkPBfgxW0&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;malaysia&quot;&gt;Malaysia&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Malaysia will send 20 medical doctors along with a 30-man rescue team and medicines and medical supplies.&lt;a href=&quot;http://www.channelnewsasia.com/news/asiapacific/malaysia-to-send-doctors/1808214.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;new-zealand&quot;&gt;New Zealand&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;45 specialised urban search and rescue (USAR) personnel from New Zealand have been sent to Nepal. The crew also includes four dog handlers and are trained in using search and rescue cameras, listening devices and line rescues. &lt;a href=&quot;http://www.stuff.co.nz/the-press/news/68058700/new-zealand-urban-search-and-rescue-mobilised-for-nepal&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;pakistan&quot;&gt;Pakistan&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Pakistan is sending in rescue teams, more equipments to help rescue teams, hospital beds, Doctors, and food items.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;Urban search&amp;amp;rescue team of Pak Army equipped with ground penetrating radars,concrete cutters,sniffing dogs &amp;amp;eqpt sent 2 help rescue teams-2&lt;/p&gt;&amp;mdash; AsimBajwaISPR (@AsimBajwaISPR) &lt;a href=&quot;https://twitter.com/AsimBajwaISPR/status/592185068350808064&quot;&gt;April 26, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p&gt;To provide relief to EQ victims in Nepal,4 C-130 acs with 30 bedded hosp,Army Drs,special search&amp;amp;rescue teams, food items left 4 Nepal-1/2&lt;/p&gt;&amp;mdash; AsimBajwaISPR (@AsimBajwaISPR) &lt;a href=&quot;https://twitter.com/AsimBajwaISPR/status/592184628527652864&quot;&gt;April 26, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;h2 id=&quot;poland&quot;&gt;Poland&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Poland has sent 81 firefighters of the State Fire Service, 12 search and rescue dogs and 6 doctors of Polish Center for International Aid. &lt;a href=&quot;http://kontakt24.tvn24.pl/najnowsze/polscy-strazacy-polecieli-z-pomoca-do-nepalu,166183.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;russia&quot;&gt;Russia&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Russia is getting ready to send more than 50 rescue workers with extensive experience in rescue missions. &lt;a href=&quot;http://tass.ru/en/russia/791789&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;singapore&quot;&gt;Singapore&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sigapore is preparing to send a 55 man search and rescue team in addition to $100,000 contribution towards Singapore Red Cross. See press release &lt;a href=&quot;http://www.straitstimes.com/news/singapore/more-singapore-stories/story/singapore-prepares-send-55-man-search-and-rescue-team-ne&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;south-korea&quot;&gt;South Korea&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;South Korea has pledged 1M$. &lt;a href=&quot;http://news.naver.com/main/read.nhn?mode=LPOD&amp;amp;mid=sec&amp;amp;oid=001&amp;amp;aid=0007554795&amp;amp;isYeonhapFlash=Y&quot;&gt;link&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;sri-lanka&quot;&gt;Sri Lanka&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;An airforce plane carrying four doctors will leave for Nepal on April 26th. Srilankan government will also send dry ration and other essential items by tomorrow (April 27th). &lt;a href=&quot;http://www.dailymirror.lk/70317/sri-lanka-to-send-emergency-relief-to-nepal&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;scandinavian-countries-norway-sweden-and-denmark&quot;&gt;Scandinavian countries (Norway, Sweden, and Denmark)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Scandinavian country will allocate $3.8 million for aid which will be distributed through United Nations and Charitable organizations. See press release &lt;a href=&quot;http://www.usnews.com/news/world/articles/2015/04/25/leaders-charities-offer-condolences-help-after-nepal-quake&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;united-kingdom&quot;&gt;United Kingdom&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;UK has sent a team of “eight-strong” team that consist of experts in search and rescue. See press release &lt;a href=&quot;http://www.bbc.com/news/uk-32465105&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;united-states&quot;&gt;United States&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.usaid.gov/news-information/press-releases/apr-25-2015-statement-us-agency-international-development-earthquake-nepal&quot;&gt;A press release&lt;/a&gt; from USAID promising “an initial $1 million in emergency assistance” through Government of Nepal along with disaster response team.&lt;a href=&quot;http://time.com/3835687/nepal-earthquake-disaster-aid-us/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.3&quot;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+&lt;div class=&quot;fb-post&quot; data-href=&quot;https://www.facebook.com/nepal.usembassy/posts/821729637864097&quot; data-width=&quot;500&quot;&gt;&lt;div class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;blockquote cite=&quot;https://www.facebook.com/nepal.usembassy/posts/821729637864097&quot;&gt;&lt;p&gt;The U.S. Government has been providing ongoing disaster preparedness support &amp;#x2013; and #WeStandWithNepal ready to help....&lt;/p&gt;Posted by &lt;a href=&quot;https://www.facebook.com/nepal.usembassy&quot;&gt;U.S. Embassy Kathmandu, Nepal&lt;/a&gt; on &lt;a href=&quot;https://www.facebook.com/nepal.usembassy/posts/821729637864097&quot;&gt;Sunday, April 26, 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;list-of-agencies-that-have-stepped-up-to-helpa-nameagenciesa&quot;&gt;List of agencies that have stepped up to help&lt;a name=&quot;agencies&quot;&gt;&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h2 id=&quot;united-nation&quot;&gt;United Nation&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.unicef.org/&quot;&gt;UNICEF&lt;/a&gt; has also setup a page for &lt;a href=&quot;https://www.unicefusa.org/donate/nepal-earthquake-help-children-now/24226&quot;&gt;donation&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;american-red-cross&quot;&gt;American Red Cross&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The American Red Cross is committing an initial $300,000 to Nepal red cross. See press release &lt;a href=&quot;http://www.redcross.org/news/article/Red-Cross-Responding-to-78-Magnitude-Earthquake-in-Nepal&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;globalliving&quot;&gt;GlobalLiving&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;GlobalLiving has started a page to raise funds (target $1,000,000). So far $198,000 has been raised (as of 10:42PM EST April 25, 2015). See their page &lt;a href=&quot;http://www.globalgiving.org/projects/nepal-earthquake-relief-fund/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;americares&quot;&gt;AmeriCares&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;An emergency response team from the AmeriCares India office in Mumbai is headed to the impact zone and relief workers are preparing shipments of medical aid and relief supplies for survivors&lt;/em&gt;. See this &lt;a href=&quot;http://www.americares.org/who-we-are/newsroom/news/americares-responding-to-nepal-earthquake.html&quot;&gt;link&lt;/a&gt; to donate and for announcement.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Tue, 15 Nov 2011 20:14:23 -0700</pubDate>
-        <link>mshakya.github.io/2011/11/15/demultiplexing.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2011/11/15/demultiplexing.html</guid>
+        <pubDate>Sat, 25 Apr 2015 18:44:09 -0600</pubDate>
+        <link>mshakya.github.io/2015/04/25/nepal-earthquake.html</link>
+        <guid isPermaLink="true">mshakya.github.io/2015/04/25/nepal-earthquake.html</guid>
         
+        
+      </item>
+    
+      <item>
+        <title>Setting up octopress</title>
+        <description>&lt;p&gt;I have had a pretty great workflow for using octopress that involved hosting my website in Amazon AWS using &lt;a href=&quot;https://github.com/jwagener/ponyHost&quot;&gt;ponyhost&lt;/a&gt;. However, Amazon started charging me so i decided to move my site to github pages (something i wanted to do anyways). I could have just used my old octopress folder and pushed the repo to github, but i decided to setup everything from scratch so that i could write this post.&lt;/p&gt;
+
+&lt;p&gt;Also, &lt;a href=&quot;http://octopress.org/docs/setup/&quot;&gt;octopress&lt;/a&gt; has an excellent step by step guide to setting up your octopress blog and deploy it to your favorite host. The following steps are roughly based on what i did after following the instruction from &lt;code&gt;octopress.org&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Few programs that is required before setting up octopress are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://git-scm.com/book/en/v2/Getting-Started-Installing-Git&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;The first step is to &lt;code&gt;clone&lt;/code&gt; octopress repo into a folder. I named mine &lt;code&gt;mshakya&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ git clone git://github.com/imathis/octopress.git mshakya
+$ cd mshakya
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The folder &lt;code&gt;mshakya&lt;/code&gt; has following files:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+	├── CHANGELOG.markdown
+	├── Gemfile
+	├── README.markdown
+	├── Rakefile
+	├── _config.yml
+	├── config.rb
+	├── config.ru
+	└── plugins
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Install other dependencies that are required for octopress using bundle - &lt;em&gt;a ruby dependency management tool&lt;/em&gt; - based on dependencies listed in &lt;code&gt;Gemfile&lt;/code&gt; - &lt;em&gt;A format for describing gem dependencies for Ruby programs&lt;/em&gt; - using &lt;a href=&quot;http://bundler.io/gemfile.html&quot;&gt;&lt;code&gt;bundle&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ bundle install
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, install the default octopress theme using rake (&lt;em&gt;ruby make&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ rake install
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;which will add three new folders&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+├── Gemfile.lock
+├── public
+├── sass
+└── source
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;sass&lt;/code&gt; stands for &lt;em&gt;Syntactically Awesome Stylesheets&lt;/em&gt;. It contains files for customizing octopress theme.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;public&lt;/code&gt;: contains html files for the website (this folder is filled when the website is generated, more on this later).&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;source&lt;/code&gt;: contains folders and files from which the blog will be generated.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;├── _includes
+├── _layouts
+├── _posts
+├── assets
+├── atom.xml
+├── blog
+├── favicon.png
+├── images
+├── index.html
+├── javascripts
+└── robots.txt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;configuration&quot;&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Configuration can be setup in &lt;code&gt;_config.yml&lt;/code&gt;. You can setup your twitter, github, facebook, etc. accounts to your blog here.&lt;/p&gt;
+
+&lt;h2 id=&quot;post&quot;&gt;Post&lt;/h2&gt;
+&lt;p&gt;Octopress has a recipe in its rakefile to create a new blog post. Just type:
+&lt;code&gt;
+$ rake new_post[&quot;Title of the post&quot;]
+&lt;/code&gt;
+This will generate a file with &lt;code&gt;Jekyll&lt;/code&gt; naming convention &lt;code&gt;YYYY-MM-DD-post-title.markdown&lt;/code&gt; with following header or yaml front matter in the folder &lt;code&gt;source/_posts&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;YAML
+	---
+	layout: post
+	title: &quot;Setting up octopress&quot;
+	date: 2014-11-09 18:55:49 -0500
+	comments: true
+	categories: [octopress, technical]
+	---
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Generate the blog by:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ rake generate
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Preview the cite locally using:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ rake preview
+&lt;/code&gt;
+The cite will be available at &lt;a href=&quot;http://localhost:4000&quot;&gt;localhost:4000&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;deploy-to-github-pages&quot;&gt;Deploy to github pages&lt;/h2&gt;
+
+&lt;p&gt;First step is to create a github repo at &lt;a href=&quot;http://github.com&quot;&gt;github.com&lt;/a&gt; following the instructions &lt;a href=&quot;https://help.github.com/articles/creating-pages-with-the-automatic-generator/&quot;&gt;here&lt;/a&gt;. One requirement is that the repo name should be in the format &lt;code&gt;username.github.io&lt;/code&gt; where &lt;code&gt;username&lt;/code&gt; is your user name in github.&lt;/p&gt;
+
+&lt;p&gt;Then, setup your local folder to deploy it to gihub repo that we just setup using:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ rake setup_github_pages
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will ask for the &lt;code&gt;Repository url&lt;/code&gt; and password. As a result, it will &lt;em&gt;rename the remote pointing to imathis/octopress from &lt;code&gt;origin&lt;/code&gt; to &lt;code&gt;octopress&lt;/code&gt;&lt;/em&gt;, add the github page as the &lt;code&gt;origin&lt;/code&gt; remote, change the branch from &lt;code&gt;master&lt;/code&gt; to &lt;code&gt;source&lt;/code&gt;, * Configure your blog’s url according to your repository*, and creates a directory &lt;code&gt;_deploy&lt;/code&gt; with all the files ready to be deployed to github repo as &lt;code&gt;master&lt;/code&gt; branch.&lt;/p&gt;
+
+&lt;p&gt;So,&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ git remote -v
+&lt;/code&gt;
+should show two remotes:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+octopress git://github.com/imathis/octopress.git (fetch)
+octopress git://github.com/imathis/octopress.git (push)
+origin: https://github.com/username/username.github.io.git (fetch)
+origin: https://github.com/username/username.github.io.git (push)
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;and, its branch should be &lt;code&gt;source&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ git branch
+* source
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally, folder &lt;code&gt;_deploy&lt;/code&gt; has only one remote and is on branch &lt;code&gt;source&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;``` bash
+$ cd _deploy
+$ git remote -v&lt;/p&gt;
+
+&lt;p&gt;origin	git@github.com:mshakya/mshakya.github.io.git (fetch)
+origin	git@github.com:mshakya/mshakya.github.io.git (push)&lt;/p&gt;
+
+&lt;p&gt;$ git branch
+* master
+```&lt;/p&gt;
+
+&lt;p&gt;The folder structure in main folder &lt;code&gt;mshakya&lt;/code&gt; now look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;├── CHANGELOG.markdown
+├── Gemfile
+├── Gemfile.lock
+├── README.markdown
+├── Rakefile
+├── _config.yml
+├── _deploy
+├── config.rb
+├── config.ru
+├── plugins
+├── public
+├── sass
+└── source
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;steps-to-update-the-blog&quot;&gt;Steps to update the blog&lt;/h2&gt;
+
+&lt;h4 id=&quot;cd-into-the-folder&quot;&gt;1. &lt;code&gt;cd&lt;/code&gt; into the folder&lt;/h4&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+	cd mshakya
+&lt;/code&gt;
+####2. create a new post&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ rake new_post[&quot;Title of the post&quot;]
+&lt;/code&gt;
+####3. Write the blog
+The new post file (markdown) is located in &lt;code&gt;source/_posts/&lt;/code&gt;. Preview the website at &lt;a href=&quot;http://localhost:4000&quot;&gt;localhost:4000&lt;/a&gt; using&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ rake preview
+&lt;/code&gt;
+####4.Generate the website
+&lt;code&gt;bash
+$ rake generate
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;deploy-the-website-to-github-using&quot;&gt;5. Deploy the website to github using&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;bash
+$ rake deploy
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This will push the website to &lt;code&gt;master&lt;/code&gt; branch of your github repo. The website should be updated and available to view at &lt;code&gt;username.github.io&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;push-the-infrastructure-octopress-file-changes-to-github&quot;&gt;6. Push the infrastructure octopress file changes to github&lt;/h4&gt;
+&lt;p&gt;Commit the changes in the octopress infrastructure files and commit changes to &lt;code&gt;source&lt;/code&gt; branch of github repo. For example, after making changes in &lt;code&gt;_config.yml&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ git stage _config.yml
+$ git commit -m &quot;personalized config file&quot;
+$ git push origin source
+&lt;/code&gt;
+An important thing to note that the website (&lt;code&gt;username.github.io&lt;/code&gt;) will show files in the &lt;strong&gt;master&lt;/strong&gt; branch only.&lt;/p&gt;
+
+&lt;h2 id=&quot;steps-to-stop-redirecting-the-domain&quot;&gt;Steps to stop redirecting the domain&lt;/h2&gt;
+&lt;p&gt;I did not update my domain name (microbeatic.com), so I had to stop forwarding &lt;code&gt;mshakya.github.io&lt;/code&gt; to &lt;code&gt;microbeatic.com&lt;/code&gt;. Here is what I did.&lt;/p&gt;
+
+&lt;h4 id=&quot;edit-cname&quot;&gt;1. edit &lt;code&gt;CNAME&lt;/code&gt;&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;I changed the &lt;code&gt;microbeatic.com&lt;/code&gt; in &lt;code&gt;CNAME&lt;/code&gt; file (located in &lt;code&gt;source/&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;rake-it-all&quot;&gt;2. rake it all&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Then, I did the usual:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;bash
+$ rake generate
+$ rake deploy
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://octopress.org/docs/&quot;&gt;octopress.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/&quot;&gt;miguelcamba.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 09 Nov 2014 16:55:49 -0700</pubDate>
+        <link>mshakya.github.io/octopress/technical/2014/11/09/setting-up-octopress-again.html</link>
+        <guid isPermaLink="true">mshakya.github.io/octopress/technical/2014/11/09/setting-up-octopress-again.html</guid>
+        
+        
+        <category>octopress</category>
+        
+        <category>technical</category>
+        
+      </item>
+    
+      <item>
+        <title>Notes on making good Scientific Poster</title>
+        <description>&lt;p&gt;Here are links to resources on making better scientific poster.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://my.aspb.org/members/group_content_view.asp?group=72494&amp;amp;id=100256&amp;amp;CFID=1926795&amp;amp;CFTOKEN=42415391&quot;&gt;1&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.cns.cornell.edu/documents/ScientificPosters.pdf&quot;&gt;2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.stanford.edu/group/blocklab/dos%20and%20donts%20of%20poster%&amp;lt;20presentation class=&amp;quot;pdf&amp;quot;&amp;gt;&amp;lt;/20presentation&amp;gt;&quot;&gt;3&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Jun 2014 09:47:00 -0600</pubDate>
+        <link>mshakya.github.io/2014/06/05/notes-on-making-good-scientific-poster.html</link>
+        <guid isPermaLink="true">mshakya.github.io/2014/06/05/notes-on-making-good-scientific-poster.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Teaching Statement</title>
+        <description>&lt;p&gt;I am attending a two day workshop in Teaching statements. Here i would like to lay down some of the points that i wrote down during group discussion session with other attendees, who are also interested in applying for an academic position that involves teaching. Additionally, many faculty positions now require a teaching statement. I think this post will help me to form my own teaching statement and philosophy as well. All my posts are written with no proof reading and corrections, so they could be filled with grammatical and spelling mistakes, and sometimes even unorganized thoughts. So, bear with me.&lt;/p&gt;
+
+&lt;p&gt;Here are some of the points that were shared by all participants.&lt;/p&gt;
+
+&lt;p&gt;In a teching statement:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;clearly articulate your passion and motivation&lt;/em&gt; for teaching.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;communicate your ideas about teaching effectively&lt;/em&gt; through a clear write up.&lt;/li&gt;
+  &lt;li&gt;show your teaching &lt;em&gt;experience&lt;/em&gt;, if you have any.&lt;/li&gt;
+  &lt;li&gt;show that you are familiar with new teaching technologies.&lt;/li&gt;
+  &lt;li&gt;discuss your teaching plans and strategies that you plan to implement in that institution.&lt;/li&gt;
+  &lt;li&gt;write about how your teaching style and philosophy &lt;em&gt;fits&lt;/em&gt; with that of the institution you are applying to.&lt;/li&gt;
+  &lt;li&gt;go through some classes offered at the institution and talk about how you can fill some of the &lt;em&gt;gaps&lt;/em&gt; in the classes offered at the institution.&lt;/li&gt;
+  &lt;li&gt;demostrate your &lt;em&gt;enthusiasm&lt;/em&gt; for teaching.&lt;/li&gt;
+  &lt;li&gt;state a philosophy that everyone can be a teacher and a learner too.&lt;/li&gt;
+  &lt;li&gt;talk about teaching in different situations.&lt;/li&gt;
+  &lt;li&gt;list out previous &lt;em&gt;mentoring&lt;/em&gt; experiences, for example, mentoring graduate and undergraduate students.&lt;/li&gt;
+  &lt;li&gt;demonstrate how you have embraced new teaching technologies.&lt;/li&gt;
+  &lt;li&gt;show your vision in curriculum development as well.&lt;/li&gt;
+  &lt;li&gt;show how you can incorporate &lt;em&gt;research and experience&lt;/em&gt; for students.&lt;/li&gt;
+  &lt;li&gt;show evidence of resilience measurement.&lt;/li&gt;
+  &lt;li&gt;show maturity.&lt;/li&gt;
+  &lt;li&gt;try to avoid jargons in the statement and give specific examples of teaching.&lt;/li&gt;
+  &lt;li&gt;do not dish out other teaching approaches even though you do not agree with it.&lt;/li&gt;
+  &lt;li&gt;talk about your pedagogical approach.&lt;/li&gt;
+  &lt;li&gt;take in consideration the potential class sizes.&lt;/li&gt;
+  &lt;li&gt;it should be very different from your CV.&lt;/li&gt;
+  &lt;li&gt;make the statement personal as it can be used as a way to gaze your overall personality.&lt;/li&gt;
+  &lt;li&gt;think about type of teacher you want to be.&lt;/li&gt;
+  &lt;li&gt;the statement should focus on not what you teach, but &lt;em&gt;how&lt;/em&gt; you teach.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 29 May 2014 20:46:00 -0600</pubDate>
+        <link>mshakya.github.io/teaching/2014/05/29/teaching-statement.html</link>
+        <guid isPermaLink="true">mshakya.github.io/teaching/2014/05/29/teaching-statement.html</guid>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Column conservation scores</title>
+        <description>&lt;p&gt;What i am looking for is infact not conservation score, its an exactly the way profiles are scored or the way PSSMs are score. I am much more interested in how each amino acid are scored in a column of the alignment, and not in the score that represents the whole column. My kind of score should put heavy emphasis on the amino acid that are highly conserved and low emphasis on the columns that are equally present, but not highly conserved.&lt;/p&gt;
+
+&lt;p&gt;I have come across many conservation scores that score the column conservation of an alignment. There are many different types of it. Here i describe them sequentially based on either original papers or the reviews. I also try to be explicit in describing only scores that measures the column conservation and not the score of the whole sequence. A publication by William S.J Valdar sounds the most suited one in terms of describing the categorizing the scores. It is important for me to find out how not the whole column or sequence is scored, but instead whats the score of each amino acid based on its presence, absence, and frequency, for i will be using this information to then compare it to the corresponding multiple sequence alignment and then inferring how different similar or they are. Here he categorizes the scores as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Symbol Frequency Scores&lt;/li&gt;
+  &lt;li&gt;Symbol Entropy Scores&lt;/li&gt;
+  &lt;li&gt;Stereochemical Property Scores&lt;/li&gt;
+  &lt;li&gt;Mutation Data Scores&lt;/li&gt;
+  &lt;li&gt;Stereochemically Sensitive Entropy Scores&lt;/li&gt;
+  &lt;li&gt;Weighted Scores&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;henikoff-weighing&quot;&gt;Henikoff weighing&lt;/h2&gt;
+&lt;p&gt;I have recently tried to understand this weighing system in more details as this is the one that is used in profile construction and also in PSSM construction. Although Wang et al tries to explain the method like this :&lt;/p&gt;
+
+&lt;h3 id=&quot;how-does-it-score-amino-acid-residues-in-an-alignment-column&quot;&gt;How does it score amino acid residues in an alignment column?&lt;/h3&gt;
+
+&lt;p&gt;In this method, first, equal share of weight is assigned to each residue. For example, if an alignment column consist of two different amino acid types, &lt;em&gt;M&lt;/em&gt; and &lt;em&gt;K&lt;/em&gt;, then each residue is assigned equal weight of 0.5 and 0.5, regardless of its distribution.&lt;/p&gt;
+
+&lt;p&gt;Here, if a column is conserved it is inversely proportional to number of sequence.&lt;/p&gt;
+
+&lt;p&gt;An example alignment:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;GYVGS
+GFDGF
+GYDGF
+GYQGG
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here,
+	&lt;em&gt;G&lt;/em&gt; in the first and fourth column is scored as &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{1*4}&lt;/script&gt; = 0.25
+	&lt;em&gt;Y&lt;/em&gt; in the second column is scored as &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{2*3}&lt;/script&gt; = 0.17
+	&lt;em&gt;F&lt;/em&gt; in the second column is scored as &lt;script type=&quot;math/tex&quot;&gt;\frac{1}{2*1}&lt;/script&gt; = 0.5&lt;/p&gt;
+
+&lt;p&gt;An example 2:&lt;/p&gt;
+
+&lt;p&gt;A score for all amino acids given using Henikoff protein profile, including gap, calcualted using &lt;em&gt;prophecy&lt;/em&gt; script in EMBOSS&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2.00 0.00 -1.25 3.75 5.00 -3.25 2.75 1.38 -0.75 0.00 1.75 -1.50 -0.88 2.38 0.00 1.50 3.12 0.50 2.62 2.62 0.00 -0.62 -3.75 0.00 -2.88 0.00 0.05 0.05
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;based on this column of the alignment&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;TEQQSST--------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;highlighting the amino acid scores in the profile represented from the amino acid&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;2.00 0.00 -1.25 3.75 **5.00** -3.25 2.75 1.38 -0.75 0.00 1.75 -1.50 -0.88 2.38 0.00 1.50 **3.12** 0.50 **2.62** **2.62** 0.00 -0.62 -3.75 0.00 -2.88 0.00 0.05 0.05
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I am not clear on how the scores for other amino acid that are not in this columns are calculated. Additionally, although gap makes up more than 50% of the column, it only accounts for 0.5&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-some-advantages&quot;&gt;What are some advantages?&lt;/h3&gt;
+&lt;p&gt;Its very fast and simple, and already implemented in the EMBOSS &lt;code&gt;prophecy&lt;/code&gt; program. It is independent of how the sequence are ordered and it uses all the information.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-some-disdvantages&quot;&gt;What are some disdvantages?&lt;/h3&gt;
+&lt;p&gt;Problem with closely related sequences in the alignment. It has equal valuation for all sequences, even if its duplicate.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-some-conditions-where-it-can-be-implemented&quot;&gt;What are some conditions where it can be implemented?&lt;/h3&gt;
+
+&lt;p&gt;“&lt;em&gt;In Henikoff weighting, for an amino acid at position &lt;script type=&quot;math/tex&quot;&gt;m&lt;/script&gt; of sequence &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt;, we first determine the subset of sequences that also have an amino acid in the same column of the multiple alignment. Each sequence in this subset may begin and end in different columns of the multiple alignment. We find the first column in which all of these sequences in the subset are represented either with an amino acid or an internal gap (i.e., excluding N- and C-terminal gaps). We call this &lt;script type=&quot;math/tex&quot;&gt;C_{left}&lt;/script&gt;. Similarly, we identify the last column of this subset in which all of these sequences are represented either with an amino acid or an internal gap. We call this &lt;script type=&quot;math/tex&quot;&gt;C_{right}&lt;/script&gt;. The weight of the amino acid at position &lt;script type=&quot;math/tex&quot;&gt;m&lt;/script&gt; of sequence &lt;script type=&quot;math/tex&quot;&gt;i&lt;/script&gt; is then [&lt;strong&gt;see below&lt;/strong&gt;] where &lt;script type=&quot;math/tex&quot;&gt;N^j_{diff}&lt;/script&gt; is the number of different amino acids at alignment position j but considering only those sequences in the subset, and &lt;script type=&quot;math/tex&quot;&gt;n_i^j&lt;/script&gt; is the total number of the same amino acid i type as the residue of sequence i in alignment column j in the subset.&lt;/em&gt;”&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;W^m_j = \frac{1}{C_{right} - C_{left} + 1} \sum_{j=C_{left} , C_{right}} \frac{1}{N_{diff}^j  n^j_i}&lt;/script&gt;
+
+&lt;p&gt;Here, the authors explains how the henikoff score is calculated. There are some important point to be noted here, the position &lt;script type=&quot;math/tex&quot;&gt;m&lt;/script&gt; is the position at an &lt;em&gt;unaligned&lt;/em&gt; sequence and is not used anywhere in the formula, so its rather not important to understand the concept. Then, from the multiple sequence alignment, a subset of sequences are picked based on the presence of an amino acid - here, it is rather confusing on what they are trying to explain  - are the subset based on the presence of same amino acid in the column or its random selection -, the former seems to make more sense, but as you go further, the &lt;script type=&quot;math/tex&quot;&gt;N^j_{diff}&lt;/script&gt; is the number of different types of amino acids in the subset, so if former were true, then it will be 1 throughout. Among the subset, the first aligned column from both ends are identified and recorded as &lt;script type=&quot;math/tex&quot;&gt;C_{left}&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;C_{right}&lt;/script&gt;. After these naming conventions are used in the formula stated above, but its unclear to me whats its value. At first glance, i thought it was a naming convention of the column.&lt;/p&gt;
+
+&lt;p&gt;The reason that the method was developed was to minimize the complexity introduced by the tree based methods.&lt;/p&gt;
+
+&lt;p&gt;“&lt;em&gt;A simple method to represent the diversity at a position is to award each different residue an equal share of weight, and then to divide that weight equally among the sequences sharing the same residue. So, if in a position of a multiple alignment, &lt;script type=&quot;math/tex&quot;&gt;r&lt;/script&gt; different residues are represented, a residue represented in only one sequence sequence contributes a score of &lt;script type=&quot;math/tex&quot;&gt;1/r&lt;/script&gt; to that sequence, wheas a residue represented in &lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt; sequence contributes a score of &lt;script type=&quot;math/tex&quot;&gt;1/rs&lt;/script&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Position based weights are simply generalizations of correct weights from single positions to whole sequences by summation overal all positions “&lt;/p&gt;
+
+&lt;h2 id=&quot;psic&quot;&gt;PSIC&lt;/h2&gt;
+</description>
+        <pubDate>Wed, 23 Apr 2014 20:07:00 -0600</pubDate>
+        <link>mshakya.github.io/2014/04/23/column-conservation-scores.html</link>
+        <guid isPermaLink="true">mshakya.github.io/2014/04/23/column-conservation-scores.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>pandas cheatseet</title>
+        <description>&lt;h2 id=&quot;removing-duplicate-results&quot;&gt;Removing duplicate results&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;df.drop_duplicates()&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 04 Dec 2013 13:26:00 -0700</pubDate>
+        <link>mshakya.github.io/2013/12/04/pandas-cheatseet.html</link>
+        <guid isPermaLink="true">mshakya.github.io/2013/12/04/pandas-cheatseet.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Handy unix commands</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;search-for-a-string-within-files&quot;&gt;Search for a string within files&lt;/h4&gt;
+
+    &lt;pre&gt;&lt;code&gt;  `grep &#39;string&#39; *.*`
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;search all files for the specified &lt;strong&gt;string&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;search-and-replace-strings-in-files-with-same-extension&quot;&gt;Search and replace strings in files with same extension&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;find . -name &#39;*.txt&#39; -exec sed -i &#39;s/old/new/g&#39; &#39;{}&#39; \;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;finds all &lt;code&gt;*.txt&lt;/code&gt; files in the current folder and replaces &lt;code&gt;old&lt;/code&gt; with &lt;code&gt;new&lt;/code&gt; throughout the files&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;adds--to-folder&quot;&gt;Adds &lt;code&gt;/&lt;/code&gt; to folder&lt;/h4&gt;
+
+    &lt;p&gt;&lt;code&gt;ls -F&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 27 Nov 2013 12:09:00 -0700</pubDate>
+        <link>mshakya.github.io/2013/11/27/handy-unix-commands.html</link>
+        <guid isPermaLink="true">mshakya.github.io/2013/11/27/handy-unix-commands.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Weekend roundup</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;Guides on using &lt;a href=&quot;http://www.gnu.org/software/make/manual/make.html&quot;&gt;make&lt;/a&gt; for reproducible data analysis can be found &lt;a href=&quot;http://zmjones.com/make.html&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;http://robjhyndman.com/hyndsight/makefiles/&quot;&gt;here&lt;/a&gt;, and &lt;a href=&quot;http://bost.ocks.org/mike/make/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Sqlite in a &lt;a href=&quot;http://sebastianraschka.com/Articles/sqlite3_database.html#sqlite&quot;&gt;nutshell&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Good advices &lt;a href=&quot;http://serialmentor.com/blog/2013/10/28/use-fine-grained-sectioning-in-your-grant-proposals&quot;&gt;here&lt;/a&gt; for all levels from undergraduate, graduate, to postdocs.&lt;/li&gt;
+  &lt;li&gt;Another way to collaborate in a real time for a paper or anything else can be found &lt;a href=&quot;http://etherpad.org&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Many interesting article &lt;a href=&quot;http://golem.ph.utexas.edu/category/2012/07/zerodeterminant_strategies_in.html&quot;&gt;here&lt;/a&gt; in n-category cafe.&lt;/li&gt;
+  &lt;li&gt;Alfred Russel Wallace gets a statue, &lt;a href=&quot;http://www.bbc.co.uk/news/science-environment-24839299&quot;&gt;finally&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;More readings on neutral evolution &lt;a href=&quot;http://caseybergman.wordpress.com/2012/09/09/on-the-neutral-sequence-fallacy/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;The other side: How do the candidates get evaluated can be found &lt;a href=&quot;http://dynamicecology.wordpress.com/2013/11/06/implicit-biases-evaluating-job-candidates/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Walla, time for &lt;a href=&quot;http://blog.revolutionanalytics.com/2009/01/using-r-as-a-scripting-language-with-rscript.html&quot;&gt;Rscripts&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;More experimental evolutions &lt;a href=&quot;http://www.nature.com/ncomms/2013/131106/ncomms3742/full/ncomms3742.html#affil-auth&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;vimdiff to find the difference between two files. Find it &lt;a href=&quot;http://www.thegeekstuff.com/2010/06/vimdiff-file-diff-tool/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This guy hates GIT and has 10 reasons for it &lt;a href=&quot;http://steveko.wordpress.com/2012/02/24/10-things-i-hate-about-git/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;CGViews, more genome comparison tools &lt;a href=&quot;http://stothard.afns.ualberta.ca/downloads/CCT/index.html&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;How to organize those messy analysis files, flows, etc.. Read &lt;a href=&quot;http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1000424&quot;&gt;this&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 25 Nov 2013 15:27:00 -0700</pubDate>
+        <link>mshakya.github.io/links/2013/11/25/weekend-roundup.html</link>
+        <guid isPermaLink="true">mshakya.github.io/links/2013/11/25/weekend-roundup.html</guid>
+        
+        
+        <category>links</category>
         
       </item>
     
