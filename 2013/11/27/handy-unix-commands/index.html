@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>migun shakya</title>
-  <meta name="description" content="Random thoughts on biology and programming.
-">
+  <title>Handy unix commands</title>
+  <meta name="description" content="      Search for a string within files  ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="mshakya.github.io/">
+  <link rel="canonical" href="mshakya.github.io/2013/11/27/handy-unix-commands/">
   <link rel="alternate" type="application/rss+xml" title="migun shakya" href="mshakya.github.io/feed.xml" />
 </head>
 
@@ -64,14 +63,39 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"></h1>
+    <h1 class="post-title">Handy unix commands</h1>
+    <p class="post-meta">Nov 27, 2013</p>
   </header>
 
   <article class="post-content">
-    <!-- <img center src="/images/arch-bac-phage.png" /><br> -->
-<p>I am a Postdoctoral Researcher in Los Alamos National Laboratory. Currently, I am building bioinformatic pipelines to ease complicated analyses. In the past, I have investigated the evolution of domesticated viruses (Gene Transfer Agents), characterized microbiome of Poplar trees across space and time, and determined the biases in methods used to determine microbial diversity (metagenetics and metagenomics).</p>
+    <ul>
+  <li>
+    <h4 id="search-for-a-string-within-files">Search for a string within files</h4>
 
-<p>I am interested in microbial evolution and coding. I spend most of my time coding (Python, R, shell script, and occasionally Perl) while constantly t</p>
+    <pre><code>  `grep 'string' *.*`
+</code></pre>
+  </li>
+</ul>
+
+<p>search all files for the specified <strong>string</strong></p>
+
+<ul>
+  <li>
+    <h4 id="search-and-replace-strings-in-files-with-same-extension">Search and replace strings in files with same extension</h4>
+  </li>
+</ul>
+
+<p><code>find . -name '*.txt' -exec sed -i 's/old/new/g' '{}' \;</code></p>
+
+<p>finds all <code>*.txt</code> files in the current folder and replaces <code>old</code> with <code>new</code> throughout the files</p>
+
+<ul>
+  <li>
+    <h4 id="adds--to-folder">Adds <code>/</code> to folder</h4>
+
+    <p><code>ls -F</code></p>
+  </li>
+</ul>
 
   </article>
 

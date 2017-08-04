@@ -6,8 +6,8 @@
 </description>
     <link>mshakya.github.io/</link>
     <atom:link href="mshakya.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 10 Jul 2017 10:04:17 -0600</pubDate>
-    <lastBuildDate>Mon, 10 Jul 2017 10:04:17 -0600</lastBuildDate>
+    <pubDate>Fri, 04 Aug 2017 00:01:26 -0600</pubDate>
+    <lastBuildDate>Fri, 04 Aug 2017 00:01:26 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,8 +28,8 @@ dd
 &lt;/ol&gt;
 </description>
         <pubDate>Tue, 22 Sep 2015 12:11:28 -0600</pubDate>
-        <link>mshakya.github.io/bioinformatics,cheatsheet/2015/09/22/vi-cheatsheet.html</link>
-        <guid isPermaLink="true">mshakya.github.io/bioinformatics,cheatsheet/2015/09/22/vi-cheatsheet.html</guid>
+        <link>mshakya.github.io/bioinformatics,cheatsheet/2015/09/22/vi-cheatsheet/</link>
+        <guid isPermaLink="true">mshakya.github.io/bioinformatics,cheatsheet/2015/09/22/vi-cheatsheet/</guid>
         
         
         <category>bioinformatics,cheatsheet</category>
@@ -51,8 +51,8 @@ dd
 &lt;h1 id=&quot;section&quot;&gt;[]&lt;/h1&gt;
 </description>
         <pubDate>Sun, 26 Apr 2015 11:14:32 -0600</pubDate>
-        <link>mshakya.github.io/2015/04/26/donatewhere.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2015/04/26/donatewhere.html</guid>
+        <link>mshakya.github.io/2015/04/26/donatewhere/</link>
+        <guid isPermaLink="true">mshakya.github.io/2015/04/26/donatewhere/</guid>
         
         
       </item>
@@ -241,8 +241,8 @@ dd
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 25 Apr 2015 18:44:09 -0600</pubDate>
-        <link>mshakya.github.io/2015/04/25/nepal-earthquake.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2015/04/25/nepal-earthquake.html</guid>
+        <link>mshakya.github.io/2015/04/25/nepal-earthquake/</link>
+        <guid isPermaLink="true">mshakya.github.io/2015/04/25/nepal-earthquake/</guid>
         
         
       </item>
@@ -483,8 +483,8 @@ $ rake deploy
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Nov 2014 16:55:49 -0700</pubDate>
-        <link>mshakya.github.io/octopress/technical/2014/11/09/setting-up-octopress-again.html</link>
-        <guid isPermaLink="true">mshakya.github.io/octopress/technical/2014/11/09/setting-up-octopress-again.html</guid>
+        <link>mshakya.github.io/octopress/technical/2014/11/09/setting-up-octopress-again/</link>
+        <guid isPermaLink="true">mshakya.github.io/octopress/technical/2014/11/09/setting-up-octopress-again/</guid>
         
         
         <category>octopress</category>
@@ -504,8 +504,8 @@ $ rake deploy
 &lt;p&gt;&lt;a href=&quot;http://www.stanford.edu/group/blocklab/dos%20and%20donts%20of%20poster%&amp;lt;20presentation class=&amp;quot;pdf&amp;quot;&amp;gt;&amp;lt;/20presentation&amp;gt;&quot;&gt;3&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Jun 2014 09:47:00 -0600</pubDate>
-        <link>mshakya.github.io/2014/06/05/notes-on-making-good-scientific-poster.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2014/06/05/notes-on-making-good-scientific-poster.html</guid>
+        <link>mshakya.github.io/2014/06/05/notes-on-making-good-scientific-poster/</link>
+        <guid isPermaLink="true">mshakya.github.io/2014/06/05/notes-on-making-good-scientific-poster/</guid>
         
         
       </item>
@@ -546,8 +546,8 @@ $ rake deploy
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 29 May 2014 20:46:00 -0600</pubDate>
-        <link>mshakya.github.io/teaching/2014/05/29/teaching-statement.html</link>
-        <guid isPermaLink="true">mshakya.github.io/teaching/2014/05/29/teaching-statement.html</guid>
+        <link>mshakya.github.io/teaching/2014/05/29/teaching-statement/</link>
+        <guid isPermaLink="true">mshakya.github.io/teaching/2014/05/29/teaching-statement/</guid>
         
         
         <category>teaching</category>
@@ -633,8 +633,8 @@ GYQGG
 &lt;h2 id=&quot;psic&quot;&gt;PSIC&lt;/h2&gt;
 </description>
         <pubDate>Wed, 23 Apr 2014 20:07:00 -0600</pubDate>
-        <link>mshakya.github.io/2014/04/23/column-conservation-scores.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2014/04/23/column-conservation-scores.html</guid>
+        <link>mshakya.github.io/2014/04/23/column-conservation-scores/</link>
+        <guid isPermaLink="true">mshakya.github.io/2014/04/23/column-conservation-scores/</guid>
         
         
       </item>
@@ -645,8 +645,8 @@ GYQGG
 &lt;p&gt;&lt;code&gt;df.drop_duplicates()&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 04 Dec 2013 13:26:00 -0700</pubDate>
-        <link>mshakya.github.io/2013/12/04/pandas-cheatseet.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2013/12/04/pandas-cheatseet.html</guid>
+        <link>mshakya.github.io/2013/12/04/pandas-cheatseet/</link>
+        <guid isPermaLink="true">mshakya.github.io/2013/12/04/pandas-cheatseet/</guid>
         
         
       </item>
@@ -683,8 +683,8 @@ GYQGG
 &lt;/ul&gt;
 </description>
         <pubDate>Wed, 27 Nov 2013 12:09:00 -0700</pubDate>
-        <link>mshakya.github.io/2013/11/27/handy-unix-commands.html</link>
-        <guid isPermaLink="true">mshakya.github.io/2013/11/27/handy-unix-commands.html</guid>
+        <link>mshakya.github.io/2013/11/27/handy-unix-commands/</link>
+        <guid isPermaLink="true">mshakya.github.io/2013/11/27/handy-unix-commands/</guid>
         
         
       </item>
@@ -709,8 +709,8 @@ GYQGG
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 25 Nov 2013 15:27:00 -0700</pubDate>
-        <link>mshakya.github.io/links/2013/11/25/weekend-roundup.html</link>
-        <guid isPermaLink="true">mshakya.github.io/links/2013/11/25/weekend-roundup.html</guid>
+        <link>mshakya.github.io/links/2013/11/25/weekend-roundup/</link>
+        <guid isPermaLink="true">mshakya.github.io/links/2013/11/25/weekend-roundup/</guid>
         
         
         <category>links</category>

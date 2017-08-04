@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>migun shakya</title>
-  <meta name="description" content="Random thoughts on biology and programming.
-">
+  <title>Batch Renaming Zillions of Sequences in Single Fasta File</title>
+  <meta name="description" content="So, working with the Illumina reads, I ran into a problem. All the sequences were anonymous as they were named as No_name. I needed to rename them so that al...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="mshakya.github.io/">
+  <link rel="canonical" href="mshakya.github.io/2012/07/17/batch-renaming-zillions-of-sequences-in-single-fasta-file/">
   <link rel="alternate" type="application/rss+xml" title="migun shakya" href="mshakya.github.io/feed.xml" />
 </head>
 
@@ -64,14 +63,18 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"></h1>
+    <h1 class="post-title">Batch Renaming Zillions of Sequences in Single Fasta File</h1>
+    <p class="post-meta">Jul 17, 2012</p>
   </header>
 
   <article class="post-content">
-    <!-- <img center src="/images/arch-bac-phage.png" /><br> -->
-<p>I am a Postdoctoral Researcher in Los Alamos National Laboratory. Currently, I am building bioinformatic pipelines to ease complicated analyses. In the past, I have investigated the evolution of domesticated viruses (Gene Transfer Agents), characterized microbiome of Poplar trees across space and time, and determined the biases in methods used to determine microbial diversity (metagenetics and metagenomics).</p>
+    <p>So, working with the Illumina reads, I ran into a problem. All the sequences were anonymous as they were named as No_name. I needed to rename them so that all the sequences have unique names. Obviously, in these situation ‘awk’ came to my mind. A life saver for perl deniers. Anyways, a simple one liner using the awk gave my sequences unique name. No_name were renamed to numbers, for example the first sequence was named as “1″, second as “2″, and so on and so forth till the end.</p>
 
-<p>I am interested in microbial evolution and coding. I spend most of my time coding (Python, R, shell script, and occasionally Perl) while constantly t</p>
+<p>```
+$awk ‘/^&gt;/{$0=”&gt;”++i}1′ test.fna &gt; test1.fna</p>
+
+<p>```
+NOTE: this post was imported from my previos blog (microbeatic.wordpress.com)</p>
 
   </article>
 

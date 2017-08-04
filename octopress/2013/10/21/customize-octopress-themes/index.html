@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>migun shakya</title>
-  <meta name="description" content="Random thoughts on biology and programming.
-">
+  <title>Customize octopress themes</title>
+  <meta name="description" content="For a long time i have been wanting to change the octopress theme. Today, I found this great post here which explains how to do what i wanted to do. I have e...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="mshakya.github.io/">
+  <link rel="canonical" href="mshakya.github.io/octopress/2013/10/21/customize-octopress-themes/">
   <link rel="alternate" type="application/rss+xml" title="migun shakya" href="mshakya.github.io/feed.xml" />
 </head>
 
@@ -64,14 +63,118 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title"></h1>
+    <h1 class="post-title">Customize octopress themes</h1>
+    <p class="post-meta">Oct 21, 2013</p>
   </header>
 
   <article class="post-content">
-    <!-- <img center src="/images/arch-bac-phage.png" /><br> -->
-<p>I am a Postdoctoral Researcher in Los Alamos National Laboratory. Currently, I am building bioinformatic pipelines to ease complicated analyses. In the past, I have investigated the evolution of domesticated viruses (Gene Transfer Agents), characterized microbiome of Poplar trees across space and time, and determined the biases in methods used to determine microbial diversity (metagenetics and metagenomics).</p>
+    <p>For a long time i have been wanting to change the octopress theme. Today, I found this great post <a href="http://aijazansari.com/2012/08/27/how-to-customize-octopress-theme/">here</a> which explains how to do what i wanted to do. I have essentially recapitulated whats in the blog here.</p>
 
-<p>I am interested in microbial evolution and coding. I spend most of my time coding (Python, R, shell script, and occasionally Perl) while constantly t</p>
+<h2 id="what-file-to-modify">What file to modify?</h2>
+
+<blockquote>
+  <p>sass/custom/_colors.css</p>
+</blockquote>
+
+<p>The file contains all the parameters that lets me make changes that i want to.</p>
+
+<h2 id="what-parameters-to-change-for-header-stripe">What parameters to change for header stripe?</h2>
+
+<p>For changing the background color of header. Add following changes.</p>
+
+<pre><code>// ////////////////////////////////////////
+// change the header colors
+//
+$header-bg: #fff;	
+$title-color: #000000 !default;
+$text-color: #333 !default;
+$text-color-light: #777 !default;
+$subtitle-color: darken($header-bg, 58);
+</code></pre>
+
+<blockquote>
+  <p><em>$header-bg</em> for specifying background color of header.</p>
+</blockquote>
+
+<blockquote>
+  <p><em>$title-color:</em> color of title in the header</p>
+</blockquote>
+
+<blockquote>
+  <p><em>$text-color:</em> color of all text in the body or posts or blog</p>
+</blockquote>
+
+<blockquote>
+  <p><em>$text-color-light:</em></p>
+</blockquote>
+
+<blockquote>
+  <p><em>$subtitle-color</em></p>
+</blockquote>
+
+<h2 id="what-parameters-to-change-for-navigation-bar-and-footer">What parameters to change for navigation bar and footer?</h2>
+
+<p>The previous changes only change the header and if you want to main text. Now, the following code will change the navigation and footnote bar.</p>
+
+<pre><code>// ////////////////////////////////////////
+// change the nav bar
+//
+$nav-bg: #fff;
+$nav-bg-front: #fff;
+$nav-bg-back: #fff;
+$nav-color: darken($nav-bg, 78) !default;
+$nav-color-hover: darken($nav-color, 25) !default;
+$nav-border: darken($nav-bg, 50) !default;
+$nav-border-top: darken($nav-bg, 33) !default;
+$nav-border-bottom: darken($nav-bg, 33) !default;
+$nav-border-left: darken($nav-bg, 11) !default;
+$nav-border-right: lighten($nav-bg, 7) !default;
+
+
+// ////////////////////////////////////////
+// change the footer
+//
+$footer-color: #888 !default;
+$footer-bg: #fff !default;
+$footer-bg-front: #fff !default;
+$footer-bg-back: #fff !default;
+$footer-color: darken($footer-bg, 38) !default;
+$footer-color-hover: darken($footer-color, 10) !default;
+$footer-border-top: lighten($footer-bg, 15) !default;
+$footer-border-bottom: darken($footer-bg, 15) !default;
+$footer-link-color: darken($footer-bg, 38) !default;
+$footer-link-color-hover: darken($footer-color, 25) !default;
+$page-border-bottom: darken($footer-bg, 5) !default;
+</code></pre>
+
+<p>Here all backgrounds are changed to white. Hex color #fff corresponds to white.</p>
+
+<h2 id="how-to-change-fonts">How to change fonts?</h2>
+
+<p>Change the following file:</p>
+
+<blockquote>
+  <p>/sass/custom/_fonts.scss</p>
+</blockquote>
+
+<p>and add the following to add the Georgia font and Lato for titles.</p>
+
+<pre><code>$sans: "Georgia", sans-serif;
+$serif: "Georgia", sans-serif;
+$heading-font-family: "Lato", sans-serif;
+$header-title-font-family: "Lato", sans-serif;
+</code></pre>
+
+<p>And add this line</p>
+
+<pre><code>&lt;link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'&gt;
+</code></pre>
+
+<p>to</p>
+
+<blockquote>
+  <p>/source/_includes/custom/head.html</p>
+</blockquote>
 
   </article>
 
