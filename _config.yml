@@ -8,5 +8,21 @@ url: "" # the base hostname & protocol for your site
 twitter_username: mshakya
 github_username: mshakya
 
+
+# Team names, titles and social links
+# based on Casey Dunn's website
+people:
+- name: Migun Shakya
+  pic: migun
+  position: Staff Scientist
+  description: My CV is available <a href="/assets/migun_CV.pdf">here</a>.
+  social:
+    - title: twitter
+      url: https://twitter.com/mshakya
+    - title: google
+      url: https://scholar.google.com/citations?user=5eGzndAAAAAJ&hl=en&oi=ao
+    - title: github
+      url: https://github.com/mshakya
+
 # Build settings
 markdown: kramdown
