@@ -3,7 +3,7 @@ description: Migun Shakya page
 baseurl: ""
 url: https://mshakya.github.io
 
-theme: cvless
+# theme: cvless commenting out for github page
 
 # site settings
 taglong: Scientist, Bioscience Division, Los Alamos National Laboratory
